@@ -1,0 +1,32 @@
+@use '../../abstracts' as a;
+
+.side-menu {
+  background-color: a.$white;
+  display: none;
+  font-family: a.$font;
+  font-size: 0.875rem;
+  font-weight: 700;
+  gap: 1rem;
+  grid-auto-rows: auto;
+  left: 0;
+  padding: 5rem 1.5rem;
+  position: absolute;
+  top: 0.875rem;
+  width: 50%;
+  z-index: 1;
+
+  > img {
+    cursor: pointer;
+    left: 1.5rem;
+    position: absolute;
+    top: 1rem;
+  }
+
+  > a,
+  a:hover,
+  a:focus,
+  a:active {
+    color: inherit;
+    text-decoration: none;
+  }
+}
